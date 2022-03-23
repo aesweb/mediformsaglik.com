@@ -425,22 +425,23 @@ img {
 .main__content {
   color: #fff;
   width: 100%;
+  text-align: center;
 }
 
 .main__content h1 {
-  font-size: 3rem;
-  background-color: #131313;
+  font-size: 2.5rem;
+  background-color: red;
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  margin-bottom: 32px;
+  margin-bottom: 5rem;
 }
 
 .main__content h2 {
-  font-size: 2rem;
-  background: red; /* fallback for old browsers */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 1.7rem;
+  background: #833ab4; /* fallback for old browsers */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -450,8 +451,8 @@ img {
 
 .main__content p {
   margin-top: 1rem;
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 400;
   color: black;
 }
 
@@ -622,11 +623,10 @@ img {
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 10rem 0;
 }
 
 .services h1 {
-  background-color: #131313;
+  background-color: red;
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
