@@ -2,21 +2,368 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll Website</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Mediform Sağlık Kabini</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <center>
-      <div class="container">
-        <h1>
-          <b> mediformsaglik.com </b>
-        </h1>
-        <h3>Şu anda yapım aşamasındayız.</h3>
-
-        <img src="img/building.png" />
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo">Mediform Sağlık</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Ana Sayfa</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page"
+              >Hakkımızda</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="#services" class="navbar__links" id="services-page"
+              >Servislerimiz</a
+            >
+          </li>
+          <li class="navbar__btn">
+            <a href="#sign-up" class="button" id="signup">Bize Ulaşın </a>
+          </li>
+        </ul>
       </div>
-    </center>
+    </nav>
+
+    <!-- Slider Start -->
+    <div class="slider" id="home">
+      <!-- fade css -->
+      <div class="myslide fade">
+        <div class="txt">
+          <h1>IMAGE 1</h1>
+          <p>Web Devoloper<br />Subscribe To My Channel For More Videos</p>
+        </div>
+        <img
+          src="assets/mediformsaglikdisgorunum.jpg"
+          style="width: 100%; height: 100%"
+        />
+      </div>
+
+      <div class="myslide fade">
+        <div class="txt">
+          <h1>IMAGE 2</h1>
+          <p>Web Devoloper<br />Subscribe To My Channel For More Videos</p>
+        </div>
+        <img src="assets/1.jpg" style="width: 100%; height: 100%" />
+      </div>
+
+      <div class="myslide fade">
+        <div class="txt">
+          <h1>IMAGE 3</h1>
+          <p>Web Devoloper<br />Subscribe To My Channel For More Videos</p>
+        </div>
+        <img src="assets/2.jpg" style="width: 100%; height: 100%" />
+      </div>
+
+      <div class="myslide fade">
+        <div class="txt">
+          <h1>IMAGE 4</h1>
+          <p>Web Devoloper<br />Subscribe To My Channel For More Videos</p>
+        </div>
+        <img src="assets/3.jpg" style="width: 100%; height: 100%" />
+      </div>
+
+      <div class="myslide fade">
+        <div class="txt">
+          <h1>IMAGE 5</h1>
+          <p>Web Devoloper<br />Subscribe To My Channel For More Videos</p>
+        </div>
+        <img src="assets/4.jpg" style="width: 100%; height: 100%" />
+      </div>
+
+      <div class="myslide fade">
+        <div class="txt">
+          <h1>IMAGE 6</h1>
+          <p>Web Devoloper<br />Subscribe To My Channel For More Videos</p>
+        </div>
+        <img src="assets/5.jpg" style="width: 100%; height: 100%" />
+      </div>
+
+      <div class="myslide fade">
+        <div class="txt">
+          <h1>IMAGE 7</h1>
+          <p>Web Devoloper<br />Subscribe To My Channel For More Videos</p>
+        </div>
+        <img src="assets/6.jpg" style="width: 100%; height: 100%" />
+      </div>
+
+      <!-- /fade css -->
+
+      <!-- onclick js -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="dotsbox" style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+      </div>
+    </div>
+    <!-- Slider End -->
+
+    <!-- About Section -->
+    <div class="main" id="about">
+      <div class="main__container">
+        <div class="main__img--container">
+          <div class="main__img--card-1"></div>
+        </div>
+        <div class="main__content">
+          <h1>Mediform Sağlık Kabini Hakkında</h1>
+          <p>
+            Misyonumuz Darıca ve yakın bölgelerde yaşayan halkımıızın sağlık
+            hizmetine ulaşımını kolaylaştırmak ve kaliteli hizmet almalarını
+            sağlamaktır. Bu gaye doğrultusunda Darıca'nın Osman Gazi
+            mahallesinde hizmet vermeye başlamış bulunmaktayız.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section end -->
+    <!-- Services Section -->
+
+    <div class="services" id="services">
+      <h1>Hizmetlerimiz</h1>
+      <div class="services__wrapper">
+        <div class="services__card">
+          <center>
+            <img src="/assets/igne.png" alt="şırınga" />
+            <p>Glutatyon Tedavisi</p>
+          </center>
+        </div>
+        <div class="services__card">
+          <center>
+            <img src="/assets/makas.png" alt="makas" />
+            <p>Sünnet</p>
+          </center>
+        </div>
+        <div class="services__card">
+          <center>
+            <img src="/assets/ilkyardım.png" alt="makas" />
+            <p>Evde Bakım Hizmetleri</p>
+          </center>
+        </div>
+        <div class="services__card">
+          <center>
+            <img src="/assets/igne.png" alt="şırınga" />
+            <p>Enjeksiyon ve Aşı</p>
+          </center>
+        </div>
+        <div class="services__card">
+          <center>
+            <img src="/assets/pansuman.png" alt="şırınga" />
+            <p>Yara ve Yanık Pansumanı</p>
+          </center>
+        </div>
+        <div class="services__card">
+          <center>
+            <img src="/assets/serum.png" alt="şırınga" />
+            <p>Serum Takma</p>
+          </center>
+        </div>
+        <div class="services__card">
+          <center>
+            <img src="/assets/ilkyardım.png" alt="şırınga" />
+            <p>Acil Yardım Uygulamaları</p>
+          </center>
+        </div>
+        <div class="services__card">
+          <center>
+            <img src="/assets/kan-alma.png" alt="şırınga" />
+            <p>Kan Alma</p>
+          </center>
+        </div>
+        <div class="services__card">
+          <center>
+            <img src="/assets/tansiyon.png" alt="şırınga" />
+            <p>Şeker ve Tansiyon Ölçümü</p>
+          </center>
+        </div>
+        <div class="services__card">
+          <center>
+            <img src="/assets/kulak-delme.png" alt="şırınga" />
+            <p>Kulak Delme</p>
+          </center>
+        </div>
+        <div class="services__card">
+          <center>
+            <img src="/assets/dikis.png" alt="şırınga" />
+            <p>Dikiş Atma ve Alma</p>
+          </center>
+        </div>
+        <div class="services__card">
+          <center>
+            <img src="/assets/gebelik-testi.png" alt="şırınga" />
+            <p>Gebelik Teski</p>
+          </center>
+        </div>
+        <div class="services__card">
+          <center>
+            <img src="/assets/tirnak-cekme.png" alt="şırınga" />
+            <p>Tırnak Çekme</p>
+          </center>
+        </div>
+        <div class="services__card">
+          <center>
+            <img src="/assets//kulak-lavaji.png" alt="şırınga" />
+            <p>Kulak Lavajı</p>
+          </center>
+        </div>
+        <div class="services__card">
+          <center>
+            <img src="/assets/cerrahi-mudahale.png" alt="şırınga" />
+            <p>Küçük Cerrahi Müdahaleler</p>
+          </center>
+        </div>
+        <div class="services__card">
+          <center>
+            <img src="/assets/buhar-uygulamasi.png" alt="şırınga" />
+            <p>Buhar-Hava Uygulamaları</p>
+          </center>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Section -->
+
+    <div class="main" id="sign-up">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>İletişim</h1>
+          <h2>
+            <a href="https://www.instagram.com/mediformsaglik/" target="_blank"
+              >@mediformsaglik</a
+            >
+          </h2>
+          <p>
+            <img src="/assets/office-tel.png" alt="Ofis Telefonu Numarası" />
+            0530 277 7141
+          </p>
+          <p>
+            <img src="/assets/tel.png" alt="Telefon Numarası" /> 0543 680 1155
+          </p>
+          <p>
+            <img src="/assets/tel.png" alt="Telefon Numarası" /> 0532 364 5640
+          </p>
+          <p>
+            <img src="/assets/tel.png" alt="Telefon Numarası" /> 0553 627 4397
+          </p>
+        </div>
+        <div class="main__img--container">
+          <div class="main__img--card-2" id="card-2">
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe
+                  width="500"
+                  height="500"
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=40%C2%B047'36.3%22N%2029%C2%B022'07.3%22E&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                ></iframe
+                ><a href="https://www.whatismyip-address.com"></a><br /><style>
+                  .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 500px;
+                    width: 500px;
+                  }</style
+                ><a href="https://www.embedgooglemap.net"
+                  >google map link for website</a
+                ><style>
+                  .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 500px;
+                    width: 500px;
+                  }
+                </style>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <!-- <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>About Us</h2>
+            <a href="/sign__up">How it works</a> <a href="/">Testimonials</a>
+            <a href="/">Careers</a> <a href="/">Terms of Service</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Contact Us</h2>
+            <a href="/">Contact</a> <a href="/">Support</a>
+            <a href="/">Destinations</a>
+          </div>
+        </div>
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Videos</h2>
+            <a href="/">Submit Video</a> <a href="/">Ambassadors</a>
+            <a href="/">Agency</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Social Media</h2>
+            <a href="/">Instagram</a> <a href="/">Facebook</a>
+            <a href="/">Youtube</a> <a href="/">Twitter</a>
+          </div>
+        </div>
+      </div> -->
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo">Mediform Sağlık</a>
+          </div>
+          <p class="website__rights">
+            © Mediform Sağlık 2020. All rights reserved
+          </p>
+          <div class="social__icons">
+            <a href="/" class="social__icon--link" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
   </body>
 </html>
