@@ -546,7 +546,10 @@ img {
     margin: 0 auto;
     height: 90%;
   }
-
+  .txt img {
+    width: 350px !important;
+    height: 350px;
+  }
   .main__img--container {
     display: flex;
     justify-content: center;
@@ -583,9 +586,9 @@ img {
 }
 
 @media screen and (max-width: 480px) {
-  .main__img--card {
-    width: 250px;
-    height: 250px;
+  .main__img--card-1 {
+    width: 350px;
+    height: 350px;
   }
 
   .mapouter {
@@ -738,7 +741,6 @@ img {
   max-width: 1000px;
   margin: 40px auto 0 auto;
 }
-
 .social__icons {
   display: flex;
   justify-content: center;
@@ -748,6 +750,7 @@ img {
 
 .website__rights {
   color: #fff;
+  text-align: center;
 }
 
 @media screen and (max-width: 820px) {
