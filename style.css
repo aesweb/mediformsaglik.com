@@ -322,7 +322,7 @@ img {
   -webkit-animation-duration: 40s;
   animation-name: zoomin;
   animation-duration: 40s;
-  background-size: cover;
+  background-size: center;
 }
 @-webkit-keyframes zoomin {
   from {
@@ -401,7 +401,11 @@ img {
   }
 }
 /* /6 */
-
+@media screen and (max-width: 648px) {
+  .gmap_canvas iframe {
+    width: 450px;
+  }
+}
 /* Slider End */
 
 .main {
@@ -555,6 +559,9 @@ img {
     justify-content: center;
   }
 
+  .gmap_canvas {
+    text-align: center;
+  }
   .main__img--card {
     height: 425px;
     width: 425px;
@@ -562,12 +569,7 @@ img {
 
   .main__content {
     text-align: center;
-    margin-bottom: 4rem;
-  }
-
-  .main__content {
-    text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
 
   .main__content h1 {
@@ -700,6 +702,12 @@ img {
 @media screen and (max-width: 768px) {
   .services__wrapper {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .services__wrapper {
+    grid-template-columns: 1fr;
   }
 }
 
