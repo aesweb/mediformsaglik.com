@@ -138,7 +138,7 @@
     height: 3px;
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
-    background: #fff;
+    background: red;
   }
 
   .navbar__item {
@@ -305,7 +305,7 @@
 }
 
 .txt h1 {
-  color: #00a7ff; /* blue */
+  color: #833ab4; /* blue */
   font-size: 50px;
   margin-bottom: 20px;
 }
@@ -426,6 +426,10 @@ img {
   color: #fff;
   width: 100%;
   text-align: center;
+}
+
+.main__content a {
+  color: black;
 }
 
 .main__content h1 {
@@ -583,13 +587,21 @@ img {
     width: 250px;
     height: 250px;
   }
-  .gmap_canvas {
-  }
-  .main__img--card-1 {
-    width: 300px;
-    height: 300px;
+
+  .mapouter {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
   }
 
+  .mapouter .gmap_canvas iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
   .fa-users,
   .fa-layer-group {
     font-size: 4rem;
