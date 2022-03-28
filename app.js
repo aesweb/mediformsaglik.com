@@ -55,6 +55,7 @@ const hideMobileMenu = () => {
 menuLinks.addEventListener('click', hideMobileMenu);
 navLogo.addEventListener('click', hideMobileMenu);
 
+// Slideshow functions
 const myslide = document.querySelectorAll('.myslide'),
   dot = document.querySelectorAll('.dot');
 let counter = 1;

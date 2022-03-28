@@ -4,6 +4,7 @@
   padding: 0;
   font-family: 'Kumbh Sans', sans-serif;
   scroll-behavior: smooth;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .navbar {
@@ -230,7 +231,7 @@
   display: inline-block;
   width: 15px;
   height: 15px;
-  border: 3px solid #fff;
+  border: 3px solid red;
   border-radius: 50%;
   margin: 0 10px;
   cursor: pointer;
@@ -240,7 +241,7 @@
 /* javascript */
 .active,
 .dot:hover {
-  border-color: #00a7ff; /* blue */
+  border-color: blue; /* blue */
 }
 /* /javascript */
 
@@ -313,17 +314,15 @@
   font-weight: bold;
   font-size: 20px;
 }
-/* /3 */
 
-/* 4 */
-img {
+.txt img {
   transform: scale(1.5, 1.5);
   -webkit-animation-name: zoomin;
   -webkit-animation-duration: 40s;
   animation-name: zoomin;
   animation-duration: 40s;
-  background-size: center;
 }
+
 @-webkit-keyframes zoomin {
   from {
     transform: scale(1, 1);
@@ -387,6 +386,9 @@ img {
 }
 /* /5 */
 
+.gmap_canvas {
+  margin-left: 3rem;
+}
 /* 6 */
 @media screen and (max-width: 520px) {
   .txt h1 {
@@ -519,7 +521,7 @@ img {
   margin: 10px;
   height: 500px;
   width: 500px;
-  background-image: url(assets/mediformsaglikdisgorunum.jpg);
+  background-image: url(assets/mediformsaglikdisgorunum2.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -561,6 +563,7 @@ img {
 
   .gmap_canvas {
     text-align: center;
+    margin-left: 0;
   }
   .main__img--card {
     height: 425px;
@@ -681,7 +684,7 @@ img {
 
 .services__card p {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 4px;
   margin-bottom: 8px;
   font-size: 20px;
   color: red;
@@ -706,8 +709,25 @@ img {
 }
 
 @media screen and (max-width: 480px) {
-  .services__wrapper {
-    grid-template-columns: 1fr;
+  /* .services__wrapper {
+  } */
+  .services__card {
+    height: 120px;
+    width: 120px;
+  }
+
+  .services__card img {
+    height: 35px;
+    width: 35px;
+  }
+
+  .services__card p {
+    margin-top: 2px;
+    font-size: 18px;
+  }
+
+  .services__card center {
+    margin-bottom: 8px;
   }
 }
 
@@ -753,7 +773,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 240px;
 }
 
 .website__rights {
@@ -789,4 +808,13 @@ img {
     padding: 10px;
     width: 100%;
   }
+}
+
+img {
+  object-fit: contain;
+  /* object-fit: scale-down; */
+  /* object-fit: cover; */
+  /* object-fit: none; */
+  background-size: cover;
+  background-size: center;
 }
